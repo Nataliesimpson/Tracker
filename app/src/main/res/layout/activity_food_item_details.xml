@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a"
+    tools:context="app.calcounterapplication.com.calcounter.FoodItemDetailsActivity">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:background="@drawable/white"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="250dp"
+        android:layout_height="250dp">
+
+        <TextView
+            android:id="@+id/detsFoodName"
+            android:textSize="24sp"
+            android:layout_marginTop="18dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/detsCaloriesValue"
+            android:textSize="22sp"
+            android:layout_marginTop="14dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_toLeftOf="@+id/detsCaloriesTitle"
+            android:textColor="#87314e"
+            android:textStyle=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/detsCaloriesTitle"
+            android:layout_toRightOf="@+id/detsCaloriesValue"
+            android:text="Cals"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/detsDateText"
+            android:text="Consumed on.."
+            android:textStyle="italic"
+            android:textSize="14sp"
+            android:layout_marginTop="14dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    </RelativeLayout>

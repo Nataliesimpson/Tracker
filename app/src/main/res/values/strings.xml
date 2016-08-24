@@ -1,0 +1,28 @@
+<resources>
+    <!--homepage activity_main-->
+    <string name="app_name">Tracker.</string>
+    <string name="get_started_button">Get started</string>
+
+
+    <!--add_food_activity-->
+    <string name="hint_food">What did you eat today?</string>
+    <string name="hint_calories">Calories</string>
+    <string name="add_food_button">Add food</string>
+    <string name="add_food_details">Add food activity</string>
+
+    <!--menu-->
+    <string name="homepage">Home</string>
+    <string name="addFood">Add food</string>
+    <string name="diary">Diary</string>
+
+    <!--diary display_food_activity-->
+    <string name="food_total_text">Total food</string>
+    <string name="food_items_num">Total foods:</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="cal_text">Cals</string>
+
+    <!--delete food_item_details_activity-->
+    <string name="delete_food_button">Delete</string>
+    <string name="delete_item">Delete Item</string>
+
+</resources>

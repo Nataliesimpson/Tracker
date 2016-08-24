@@ -1,0 +1,58 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.tracker">
+
+    <!--This file gives the app all the info it needs about resources it needs to use when running-->
+    <!--every activity we want to include needs to be listed here otherwise the app cant find it-->
+    <!--when its running-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--name: reference to the class our program is going to execute from-->
+        <!--label: will display on the top bar of our app-->
+        <!--intent-filter: tells the OS there is something that we want done-->
+        <!--MAIN: entry point to our app that actually runs it-->
+        <!--action: tells it what to do-->
+        <!--category: describes where, when or how we want to use the activity-->
+        <!--LAUNCHER: shows our app in the list of apps-->
+        <activity
+            android:name=".Tracker"
+            android:label="@string/app_name">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!--this activity by a button click in another activity - the parent activity-->
+        <!--we need to let the manifest know which activity is the parent activity-->
+        <!--the @ sign is used to indicate a resource reference-->
+        <!--display add food page-->
+        <activity
+            android:name=".AddFoodActivity"
+            android:label="Add Food"
+            android:parentActivityName=".Tracker">
+        </activity>
+
+        <!--displaying list of foods-->
+        <activity
+            android:name=".DisplayFoodActivity"
+            android:label="Food diary"
+            android:parentActivityName=".AddFoodActivity">
+        </activity>
+
+        <!--display individual food with delete button-->
+        <activity
+            android:name=".FoodItemDetailsActivity"
+            android:label="Delete Item"
+            android:parentActivityName=".DisplayFoodActivity">
+        </activity>
+
+    </application>
+
+</manifest>

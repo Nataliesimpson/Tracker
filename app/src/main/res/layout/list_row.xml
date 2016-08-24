@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="12dp"
+    android:layout_height="match_parent">
+
+    <!--Food name-->
+    <TextView
+        android:id="@+id/name"
+        android:text="Food Name"
+        android:layout_marginTop="4dp"
+        android:textSize="24sp"
+        android:textStyle=""
+        android:padding="2dp"
+        android:textColor="#87314e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--Date-->
+    <TextView
+        android:id="@+id/dateText"
+        android:text="Date text"
+        android:layout_below="@+id/name"
+        android:padding="2dp"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/thumbnail"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_below="@+id/dateText"-->
+        <!--android:layout_width="90dp"-->
+        <!--android:layout_height="90dp" />-->
+
+    <!--Number of calories-->
+    <TextView
+        android:id="@+id/calories"
+        android:textStyle=""
+        android:layout_below="@+id/dateText"
+        android:layout_marginTop="4dp"
+        android:gravity="right"
+        android:textAlignment="gravity"
+        android:textSize="24sp"
+        android:textColor="#87314e"
+        android:padding="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--calories text-->
+    <TextView
+        android:id="@+id/calText"
+        android:text="@string/cal_text"
+        android:layout_marginTop="16dp"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/calories"
+        android:layout_below="@+id/dateText"
+        android:gravity="right"
+        android:layout_marginLeft="2dp"
+        android:textAlignment="gravity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <!--android:layout_alignBaseline="@+id/calories"-->
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/hasChild"-->
+        <!--android:text=">"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:textSize="30sp"-->
+        <!--android:layout_toRightOf="@+id/calText"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    </RelativeLayout>

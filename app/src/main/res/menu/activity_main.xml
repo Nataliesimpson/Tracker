@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_homepage"
+          android:title="@string/homepage"
+          android:textColor="#9DC8C8"/>
+    <item android:id="@+id/action_addFood"
+          android:title="@string/addFood"/>
+    <item android:id="@+id/action_diary"
+          android:title="@string/diary"/>
+
+</menu>
